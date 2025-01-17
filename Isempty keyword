@@ -1,0 +1,15 @@
+package welcome;
+public class ASCIIISEMPTY {
+	public static void main(String[] args) {
+		String a="Hello";
+		String b="hello";
+		System.out.println("Equals:"+a.equals(b));
+		System.out.println(a.charAt(0));
+		System.out.println("Isempty:"+a.isEmpty());
+	}
+}
+
+OUTPUT:
+Equals:false
+H
+Isempty:false
