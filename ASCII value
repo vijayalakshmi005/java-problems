@@ -1,0 +1,11 @@
+package welcome;
+public class ASCIISTRING {
+	public static void main(String[] args) {
+		String name="hello";
+		System.out.println("hashcode:"+name.hashCode());
+	}
+
+}
+
+OUTPUT:
+hashcode:99162322
