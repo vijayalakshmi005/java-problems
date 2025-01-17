@@ -1,0 +1,18 @@
+package welcome;
+
+public class ASCIITRIM {
+	public static void main(String[] args) {
+		String a="Hello";
+		String b="hello";
+		System.out.println("Equals:"+a.equals(b));
+		System.out.println(a.charAt(0));
+		System.out.println("TRIM:"+a.trim());
+		// TODO ASCII trim in string
+
+	}
+
+}
+OUTPUT:
+Equals:false
+H
+TRIM:Hello
