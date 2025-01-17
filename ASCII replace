@@ -1,0 +1,20 @@
+package welcome;
+
+public class ASCIIREPLACE {
+
+	public static void main(String[] args) {
+		String a="Hello";
+		String b="hello";
+		System.out.println("Equals:"+a.equals(b));
+		System.out.println(a.charAt(0));
+		System.out.println("Replace:"+a.replace("Hello", "hi"));
+				
+		// TODO ASCII replace in a string
+
+	}
+}
+
+OUTPUT:
+Equals:false
+H
+Replace:hi
