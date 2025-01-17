@@ -1,0 +1,19 @@
+package welcome;
+
+public class ASCIICONTAIN {
+
+	public static void main(String[] args) {
+		String a="Hello";
+		String b="hello";
+		System.out.println("Equals:"+a.equals(b));
+		System.out.println(a.charAt(0));
+		System.out.println("Contains:"+a.contains("no"));
+		// DEALS WITH CONTAIN KEYWORD IN FINDING ASCII VALUES
+
+	}
+}
+
+OUTPUT:
+Equals:false
+H
+Contains:false
