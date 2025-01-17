@@ -1,0 +1,26 @@
+package welcome;
+
+public class ARRAYEVENODD {
+
+	public static void main(String[] args) {
+		int a[]= {1,2,3,4,5};
+		int even=0,odd=0;
+		for(int Element:a) 
+		{
+			if(Element%2==0) {
+				even++;
+			}
+			else {
+				odd++;
+			}
+		}
+		System.out.println(odd);
+		System.out.println(even);
+	}
+
+}
+
+
+
+OUTPUT:
+
