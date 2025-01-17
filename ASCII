@@ -1,0 +1,9 @@
+package welcome;
+public class ASCIICHARACTER {
+	public static void main(String[] args) {
+		String a="Hello";
+		String b="hello";
+		System.out.println("Equals:"+a.equals(b));
+		System.out.println(a.charAt(0));
+	}
+}
