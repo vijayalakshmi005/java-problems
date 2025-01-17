@@ -1,0 +1,28 @@
+package welcome;
+
+public class arrayeven {
+	public static void main(String[] args) {
+		int a[]= {1,2,3,4,5};
+		
+		System.out.println("The even numbers are:");
+		for(int i=0;i<a.length;i++) {
+			
+			if(a[i]%2==0) {
+				System.out.println(a[i]);
+			}
+			
+		}
+	
+		// TODO print the  even and odd
+
+	}
+
+}
+
+DETAILED DESCRIPTION:
+this problem `arrayeven` program in Java identifies and prints even numbers from an array. 
+It defines an integer array `a` and iterates through its elements using a `for` loop. Within the loop, it checks if each number is even using the modulus operator (`%`) and prints it if true. 
+OUTPUT:
+The even numbers are:
+2
+4
