@@ -1,0 +1,18 @@
+package welcome;
+
+public class ASCIILENGTH {
+
+	public static void main(String[] args) {
+		String a="Hello";
+		String b="hello";
+		System.out.println("Equals:"+a.equals(b));
+		System.out.println(a.length());
+		// TODO deals with ASCII length
+
+	}
+
+}
+
+OUTPUT:
+Equals:false
+5
