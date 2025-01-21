@@ -1,0 +1,19 @@
+package welcome;
+
+public class Valuechangeinarray {
+
+	public static void main(String[] args) {
+	
+		String a[]= {"van","car","bike"};
+		a[1]="van";
+		System.out.println("the value changes as:"+a[1]);
+
+	}
+
+}
+
+OUTPUT:
+the value changes as:van
+
+DETAILED DESCRIPTION:
+This program contains string values with van as index 0,car as index value 1,bike as index value 2 now changing the index value of a[1]="van".thus our output reads the index value as van.
