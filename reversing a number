@@ -1,0 +1,31 @@
+package welcome;
+
+import java.util.Scanner;
+
+public class REVERSE {
+
+	public static void main(String[] args) {
+		Scanner reversee=new Scanner(System.in);
+		System.out.println("enter the number");
+		int n=reversee.nextInt();
+		int reverse=0,rem;
+		while(n!=0) {
+			rem=n%10;
+			reverse=(reverse*10)+rem;
+			n=n/10;
+		}
+		System.out.println("reverse of is " +reverse);
+
+	}
+
+}
+
+OUTPUT:
+enter the number
+56789043
+reverse of is 34098765
+
+DETAILED DESCRIPTION:
+The variable reverse is initialized to 0, and the program uses a while loop to extract and process each digit of the number.
+In each iteration, the last digit (rem) is obtained using n % 10, added to reverse after multiplying reverse by 10, and the number n is reduced by dividing it by 10.
+Thus te ouput is obtained by entering the while condition and checks that if the given n valiues does not equals 0 and after it follows each condition which is expalined and thus we can reverse the number.
