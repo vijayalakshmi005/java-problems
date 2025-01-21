@@ -1,0 +1,18 @@
+package welcome;
+
+public class STRINGARRAY {
+
+	public static void main(String[] args) {
+		String a[]= {"car","bike","plane","ship","hotwheels car"};
+		System.out.println(a[4]);
+		
+
+	}
+
+}
+
+OUTPUT:
+hotwheels car
+
+DETAILED DESCRIPTION:;
+This program details with finding an index value as a[4] in the string a[] where we get the output as hotwheels car with index value 4.
