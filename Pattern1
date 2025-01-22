@@ -1,0 +1,28 @@
+package welcome;
+public class PATTERN 
+{
+	public static void main(String[] args) 
+	{
+		// Pattern
+		int i,j,n=5;
+		for(i=n; i>=0; i--) 
+		{
+		for (j=1; j<=i; j++) 
+		{
+			System.out.print("* ");
+		}
+		System.out.println("");
+		}
+	}
+}
+
+OUTPUT:
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+DETAILED DESCRIPTION:
+The above program is used to print the inversed right angle triangle for which we use variable i and j, i denotes for columns and j denotes for rows.
+when the input value enters the for loop in which (i=5;i>=0;i--) continues still 1 which is for columns and for j depends on i value(j=1;j<=1;j++)continues still the i value. 
