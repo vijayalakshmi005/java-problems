@@ -1,0 +1,24 @@
+class leap
+{
+    public static void main(String[] args)
+    {
+        int year=1900;
+        if((year%4==0 && year% 100!=0)||(year%400==0))
+        {
+            System.out.println("it is leap year");
+        }
+        else{
+            System.out.println("it is not a leap year");
+        }
+    }
+}
+
+OUTPUT:
+it is not a leap year
+
+DETAILED DEFINITION:
+The above program explains that a given year is leap year  or not.
+Leap year is a year which occurs every 4 year.
+A year is a leap year if it is divisible by 4 but not by 100, unless it is also divisible by 400. 
+This accounts for the Gregorian calendar rules, where most years divisible by 4 are leap years, except for century years not divisible by 400. 
+Examples: 2000 (leap year), 1900 (not a leap year).
