@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class array{
+    public static void main(String[]args){
+        int[] num=new int[5];
+        Scanner sc=new Scanner(System.in);
+         num[0]=sc.nextInt();
+         num[1]=sc.nextInt();
+         num[2]=sc.nextInt();
+         num[3]=sc.nextInt();
+         num[4]=sc.nextInt();
+    int sum=0;
+        sum=(num[0]+num[1]+num[2]+num[3]+num[4]);
+        System.out.println("sum of array values is "+sum);
+
+    }
+}
+
+OUTPUT:
+0
+2
+3
+13
+76
+sum of array values is 94
+
+DETAILED DESCRIPTION:
+The above java program initializes an integer array of size 5 and uses a Scanner to input 5 integers from the user. 
+It then calculates the sum of the array values by adding the elements together. 
+Finally, the program prints the sum of the values stored in the array.
