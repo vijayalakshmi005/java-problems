@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class exp{
+    
+    public static void main(String args[])   {
+char ch='E';
+ch = Character.toLowerCase(ch);
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+{
+System.out.println("given character is vowel");
+}
+else
+{
+System.out.println("given character is a consonant"); 
+}
+
+    }
+}
+
+OUTPUT:
+given character is vowel
+
+DETAILED DESCRIPTION:
+The program converts the character to lowercase using Character.toLowerCase(ch).
+It then checks if the character is a consonant by ensuring it is a letter ('a' to 'z') and not a vowel ('a', 'e', 'i', 'o', 'u').
+If the conditions are met, it prints "Given character is a consonant." Otherwise, it prints "Given character is a vowel or non-alphabetic."
