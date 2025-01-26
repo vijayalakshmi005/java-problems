@@ -1,0 +1,41 @@
+PROBLEM STATEMENT:
+Find the number belonging to which group above 50, between 40 to 50, less than 40.Write a Program to check the given number is divisible by both 3&4 if it is so print.
+If a number is divisible by only 4 but not 3 then print "Good Afternoon"
+If it is divisible by only 3 but not 4 then print "Good Evening" otherwise print "Good morning".
+
+
+SOLUTION:
+
+class divisible
+{
+    public static void main(String []args){
+        int num1=30;
+        if(num1%4==0 && num1%3!=0)
+        {
+            System.out.println("Good afternoon");
+
+        }
+        else if(num1%4!=0 && num1%3==0)
+        {
+            System.out.println("good night");
+        }
+        else
+        {
+            System.out.println("good morning");
+        }
+    }
+}
+
+
+SOLUTION:
+good night
+
+DETAILED DESCRIPTION:
+The program checks divisibility conditions for `num1 = 30`. If `num1` is divisible by 4 but not by 3, it prints "Good afternoon.
+" If num1 is divisible by 3 but not by 4, it prints "Good night." Otherwise (if it's divisible by both or neither), it prints "Good morning."
+The program uses the modulus operator (%) to check divisibility.  
+'num1 % 4 == 0' checks if `num1` is divisible by 4.  
+'num1 % 3 != 0' ensures `num1` is not divisible by 3.  
+The logical AND (`&&`) ensures both conditions are true together.  
+The logical OR (`||`)** is not used, but the else condition handles cases where neither condition is met.
+
