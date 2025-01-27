@@ -1,0 +1,40 @@
+PROBLEM STATEMENT:
+To take three integer inputs from the user.Calculate and display the product of a, b, and c which should be in d and also divide the product of three integers and by its division values.
+
+SOLUTION:
+import java.util.Scanner;
+class exp{
+    
+    public static void main(String args[])   {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d,e;
+        
+    System.out.println("value of a is " +a);
+     System.out.println("value of b "  +b); 
+    System.out.println("value of c " +c);
+    d=a*b*c;
+    System.out.println("the value of d is " +d);
+    e=a+b+c;
+    e=d/e;
+    System.out.println("the value of e is "+e);
+    }
+}
+
+OUTPUT:
+34
+67
+90
+value of a is 34
+value of b is 67
+value of c is  90
+the value of d is 205020
+the value of e is 1073
+
+DETAILED DESCRIPTION:
+The program takes three integers a, b, and c as input from the user and displays their values.  
+It calculates the product of the three numbers (d = a * b * c) and displays the result.  
+It computes the sum of the three numbers (e = a + b + c) and then updates e by dividing `d` by this sum (e = d / e).  
+Finally, it displays the updated value of e.  
