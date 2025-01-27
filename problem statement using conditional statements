@@ -1,0 +1,36 @@
+PROBLEM:
+What is the color of the traffic light?
+If the answer is "red," print "Stop."
+If the answer is "yellow," print "Get Ready"
+If the answer is "green," print "Go."
+
+SOLUTION:
+import java.util.Scanner;
+class col  {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a color (red, yellow, green):");
+        String colour = scan.nextLine();
+
+        if (colour.equals("red")) {
+            System.out.println("Stop");
+        } else if (colour.equals("yellow")) {
+            System.out.println("Get ready");
+        } else if (colour.equals("green")) {
+            System.out.println("Go");
+        } else {
+            System.out.println("Invalid color");
+        }
+    }
+}
+
+OUTPUT:
+Enter a color (red, yellow, green):
+green
+Go
+
+DETAILED DESCRIPTION;
+The program prompts the user to enter a color (red, yellow, or green) and reads the input using a Scanner.  
+It checks the input against  (red, yellow, green) using conditional statements.  
+Based on the input, it prints corresponding actions: "Stop", "Get ready", or "Go". For invalid inputs, it displays `"Invalid color"`.  
+color.equals to to chect check with the given color as other(==) deals with equals the reference value.
