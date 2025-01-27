@@ -1,0 +1,49 @@
+PROBLEM STATEMENT:
+Get input for salary and age.
+If salary greater than or equal to 20000 or age less than or equal to 25, get input for required loan amount. If not print you are not eligible for loan.
+If required loan amount is less than or equal to 50,000 print You are eligible for loan. If it is greater than 50,000 print maximum loan amountis 50000
+
+SOLUTION:
+
+import java.util.Scanner;
+class compare{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your salary:");
+        int salary=sc.nextInt();
+        System.out.println("enter your age:");
+        int age=sc.nextInt();
+        if(salary>=20000 || age<=25)
+        {
+            System.out.println("enetr your loan amount");
+            int loan=sc.nextInt();
+            
+        
+          if(loan<50000){
+            System.out.println("you are eligible for loan");
+          }
+          else{
+            System.out.println("maximum loan amount is 50000");
+          }
+    }
+        else{
+            System.out.println("invalid input");
+        }
+    }
+}
+
+SOLUTION:
+enter your salary:
+23000
+enter your age:
+19   
+enetr your loan amount
+25000
+you are eligible for loan
+
+DETAILED DESCRIPTION:
+It checks if the salary is >= 20000 or the age is <= 25. If not, it prints "invalid input".
+If eligible, it asks the user to input a loan amount.
+Loan Amount Validation: It checks if the entered loan amount is less than 50000.
+Based on the loan amount, it prints "you are eligible for loan" or "maximum loan amount is 50000".
