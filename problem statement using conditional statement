@@ -1,0 +1,38 @@
+PROBLEM STATEMENT:
+Get input for five subjects marks. Add all of it, And find average. If average mark is less than 35. Print "need some care" else Print "you are good to go"
+
+SOLUTION:
+import java.util.Scanner;
+class marks{
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        int m1=sc.nextInt();
+        int m2=sc.nextInt();
+        int m3=sc.nextInt();
+        int m4=sc.nextInt();
+        int m5=sc.nextInt();
+        int totalmarks=m1+m2+m3+m4+m5;
+        int avg=totalmarks/5;
+if(avg<35)
+{
+    System.out.println("need some care");
+}
+   else
+   {
+    System.out.println("you are good to go");
+   }     
+    }
+}
+OUTPUT:
+23
+09
+89
+67
+54
+you are good to go
+
+DETAILED DESCRIPTION:
+The program uses a Scanner to accept five integer marks (m1, m2, m3, m4, m5) from the user.
+ It computes the total marks by summing the five inputs and calculates the average by dividing the total by 5.
+If the average is less than 35, the program displays "need some care".
+ Otherwise, it prints "you are good to go".
