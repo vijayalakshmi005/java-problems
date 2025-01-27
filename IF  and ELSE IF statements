@@ -1,0 +1,22 @@
+Find the number belonging to which group above 50,between 40 to 50,less than 40?
+
+SOLUTION:
+class greater{
+    public static void main(String args[]){
+        int n=45;
+        if(n>50)
+        {
+        System.out.println("n belongs to group above 50");
+        }
+        
+        else if(n>=40 && n<=50){
+        System.out.println("n belongs to a group between 40 and 50");
+        }
+        else{
+            System.out.println("n is lesser than 40");
+        }
+
+DETAILED DESCRIPTION:
+First Condition (n > 50): If the number is greater than 50, it prints "The number belongs to the group above 50."
+Second Condition (n >= 40 && n <= 50): If the number is between 40 and 50 , it prints "The number belongs to the group between 40 and 50",the && operator ensures that both conditions are true for the number to be classified as between 40 and 50.
+Else Block: If neither of the above conditions is true, the number must be less than 40, so it prints "The number belongs to the group below 40."
