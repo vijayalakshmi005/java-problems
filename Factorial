@@ -1,0 +1,30 @@
+class fibonacci{
+    public static void main(String[]args){
+        int n1=0,n2=1,n3,count=10;
+        System.out.println(n1+""+n2);
+        for(int i=2;i<count;i++)
+        {
+            n3=n2+n1;
+            System.out.println(""+n3);
+            n1=n2;
+            n2=n3;
+        }
+    }
+}
+
+SOLUTION:
+01
+1
+2
+3
+5
+8
+13
+21
+34
+
+DETAILED DESCRIPTION:
+This Java program generates the first 10 numbers of the Fibonacci sequence, where each term (starting from the third) is the sum of the previous two.
+The program initializes n1 = 0,n2 = 1, and count = 10, then prints the first two terms.
+A for loop iterates from 2 to count, calculating n3 = n1 + n2, printing it, and updating n1 and n2. 
+The main method serves as the entry point, executing the logic within the fibonacci class.
