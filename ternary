@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class ter{
+public static void main(String[]args){
+   
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        String result=n1>n2?"n1 is greater":"n2 is greater";
+        System.out.println(result);
+    }
+}
+
+OUTPUT:
+12
+34
+n2 is greater
+
+TERNARY OPERATOR:
+The ternary operator in Java is a shorthand for the if-else statement. 
+It has the following syntax:condition ? expression1 : expression2;
+If condition is true, expression1 executes.
+If condition is false, expression2 executes.
+
+
+DETAILED DESCRIPTION:
+String result = n1 > n2 ? "n1 is greater" : "n2 is greater";
+It checks if n1 is greater than n2.
+If n1 > n2 is true, result is assigned "n1 is greater".
+Otherwise, result is assigned "n2 is greater".
