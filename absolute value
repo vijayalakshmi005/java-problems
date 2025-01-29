@@ -1,0 +1,54 @@
+PROBLEM STATEMENT:
+You have two numbers, and your challenge is to write a program that performs both 
+addition and subtraction with them. However, if any subtraction results in a negative 
+number, display it as a positive value. How will you tackle this and show the final 
+results?
+
+For example, consider two numbers 20 and 15. 
+Addition of 2 values: 20 + 15 = 35.
+Subtraction of 2 values: 20 - 15 = 5. 
+For example, consider two numbers 20 and -150. 
+Addition of 2 values: 20 + (-150) = -130 Absolute value of (-130) = 130.
+Subtraction of 2 values: 20 - (-150) = 170.
+
+SOLUTION:
+import java.util.Scanner;
+class AddSub {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+        int add = num1 + num2;
+        if (add < 0) {
+            add = -add; // Convert negative to positive
+        }
+        int sub = num1 - num2;
+        if (sub < 0) {
+            sub = -sub; // Convert negative to positive
+        }
+
+        // Display results
+        System.out.println("Addition of two values: " + add);
+        System.out.println("Subtraction of two values: " + sub);
+    }
+}
+
+SOLUTION:
+Enter the first number: 20
+Enter the second number: 15
+Addition of two values: 35
+Subtraction of two values: 5
+
+PS C:\Users\vijay\OneDrive\Documents\JAVA> java add.java
+Enter the first number: 20    
+Enter the second number: -150
+Addition of two values: 130
+Subtraction of two values: 170
+
+DETAILED DESCRIPTION:
+If the sum (add) is negative, it is converted to a positive value using add = -add
+If the difference (sub) is negative, it is converted to a positive value using sub = -sub
+Absolute Value Conversion Ensures all results are positive.
