@@ -1,0 +1,49 @@
+PROBLEM:
+To identify the vowels and consonants from the given string and print it.
+
+SOLUTION:
+class VowelsAndConsonants {
+
+    public static void findVowelsAndConsonants(String input) {
+      
+        String vowels = "";
+        String consonants = "";
+        input = input.toLowerCase();
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (Character.isLetter(ch)) {
+       
+                switch (ch) {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                        vowels += ch;  
+                        break;
+                    default:
+                        consonants += ch; 
+                        break;
+                }
+            }
+        }
+        System.out.println("Vowels: " + vowels);
+        System.out.println("Consonants: " + consonants);
+    }
+    public static void main(String[] args) {
+        String input = "hello";
+        findVowelsAndConsonants(input);
+    }
+}
+
+OUTPUT:
+Vowels: eo
+Consonants: hll
+
+DETAILED DESCRIPTION:
+The program defines a method `findVowelsAndConsonants` that takes a string input and categorizes its letters into vowels and consonants.
+It first converts the input to lowercase for uniformity. 
+Then, it iterates through each character, checking if it is a letter. 
+Using a `switch` case, it identifies vowels (`a, e, i, o, u`) and adds them to the `vowels` string, while all other letters are added to the `consonants` string. 
+Finally, it prints both the vowels and consonants separately. 
+The `main` method demonstrates this logic by calling the function with the example input `"hello"`.
