@@ -1,0 +1,17 @@
+class parse
+{
+    public static void main(String []args)
+   {
+        int i1=Integer.parseInt(args[0]);
+        int i2=Integer.parseInt(args[1]);
+        System.out.println("the output is" +(i1+i2));
+    }
+}
+
+OUTPUT:
+PS C:\Users\vijay\OneDrive\Documents\JAVA> java parse.java 12 23
+the output is 35
+
+DETAILED DESCRIPTION:
+parseInt() in Java is a method of the Integer class that converts a string into an integer.
+the above program gets the input from the time of execution itself thus the input 12 and 23 are given at the time of execution.
