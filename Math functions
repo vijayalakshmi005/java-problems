@@ -1,0 +1,26 @@
+package string;
+
+public class math {
+
+	public static void main(String[] args) {
+		System.out.println(Math.abs(-40));
+		System.out.println(Math.round(4.82));
+		System.out.println(Math.ceil(4.28));
+		System.out.println(Math.floor(4.62));
+		int a=10;
+		int b=20;
+		System.out.println(Math.max(a, b));
+		System.out.println(Math.pow(2, 3));
+		System.out.println(Math.sqrt(b));
+	}
+
+}
+
+OUTPUT:
+40
+5
+5.0
+4.0
+20
+8.0
+4.47213595499958
