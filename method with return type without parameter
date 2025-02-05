@@ -1,0 +1,15 @@
+class demo{
+    // method without return type and without parameter
+    static void display()
+    {
+        System.out.println("hello java");
+    }
+    public static void main(String[]args)
+    {
+        display();
+    }
+}
+
+OUTPUT:
+hello java
+
