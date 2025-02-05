@@ -1,0 +1,15 @@
+class method2{
+    // method with parameter and without return type
+    static void display(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+    public static void main(String[]args)
+    {
+        int x=10,y=20;
+        display(x,y);
+    }
+}
+
+OUTPUT:
+30
